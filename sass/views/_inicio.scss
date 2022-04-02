@@ -1,0 +1,33 @@
+#fondo{ 
+    background-image: url(../img/incio.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+.index__a {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1 ;
+    justify-items:center;
+    align-items:center;
+    font-weight: 37.5em;
+    font-size: 3.4em;
+    padding: .5rem;
+    margin: 20px;
+    background-color:rgb(240, 196, 181);
+    animation: explosive__move infinite ease-out 6s;
+}
+.index__b {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 2;
+    justify-items:center;
+    align-items:center;
+    font-weight: 37.5em;
+    font-size: 2em;
+    padding: 1rem;
+    margin: 20px;
+    background-color: rgb(240, 196, 181);
+    animation: explosive__move infinite ease-out 6s;
+}
