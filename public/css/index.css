@@ -101,7 +101,7 @@ main {
     grid-template-columns: 180px 1fr 1fr;
     grid-template-rows: 180px 180px;
     background: radial-gradient(circle, #5ffbf1, #52eff8, #54e3fc, #60d6fb, #71c8f5, #71c8f5, #71c8f5, #71c8f5, #60d6fb, #54e3fc, #52eff8, #5ffbf1); }
-    main .main__disposicion .main__disposicion__h2 {
+    main .main__disposicion__h2 {
       display: grid;
       grid-column: 1;
       grid-row: 1 / 4;
