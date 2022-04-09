@@ -1,33 +1,32 @@
-.empresa__a{
+.empresa__estilos {
     display: grid;
-    grid-column: 2 / 3 ;
-    grid-row: 1;
-    justify-items:center;
-    align-items:center;
-    color: grey;
-    font-weight: 12.5em;
-    font-size: 1.8em;
-    margin: 0 .3rem;
-}
-.empresa__b{
-    display: grid;
-    grid-column: 3 / 4 ;
-    grid-row: 1;
-    justify-items:center;
+    justify-items: center;
     align-items: center;
-    color: grey;
+    color: rgb(33, 33, 173);
     font-weight: 12.5em;
     font-size: 1.8em;
+    padding: 0 1rem;
 }
-.empresa__c{
+
+.empresa__mision {
+    @extend .empresa__estilos;
     display: grid;
-    grid-column: 2 / 5;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    color: black;
+}
+
+.empresa__vision {
+    @extend .empresa__estilos;
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 1;
+    color: black
+}
+
+.empresa__quienessomos {
+    @extend .empresa__estilos;
+    display: grid;
+    grid-column: 2 / 4;
     grid-row: 2;
-    justify-items:center;
-    align-items: center;
-    color: grey;
-    font-weight: 12.5em;
-    font-size: 1.8em;
-    padding: 1.2rem;
-    margin: .3rem 0 0.3rem .3rem;
 }

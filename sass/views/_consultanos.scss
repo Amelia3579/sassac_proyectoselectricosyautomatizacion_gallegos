@@ -1,20 +1,40 @@
-ol{
+ol {
     font-size: 1.8em;
-    color: grey;
+    color:black;
     margin: 1.8em;
 }
-form{
+
+form {
     display: grid;
-    grid-column:  3 ;
+    grid-column: 3;
     grid-row: 1 / 2;
-    width: 25em;
-    margin: 2em 10em;
+    width: 30rem;
+    margin: 3rem 5rem;
+    border-left: .3rem solid grey;
 }
-label{
+
+label {
     display: block;
     padding: .3rem;
+    margin: 0 2rem;
 }
-.btn{
-    padding: .3rem;
-    background-color: aqua;
+input[type], select, textarea {
+    margin: 0 1.3rem;
+    padding: .3rem 0;
+}
+
+
+$botones:(             
+    resetear: #f83d3d,
+    enviar: #00ffaa
+);
+
+@each $boton,
+$color in $botones {
+    .btn--#{$boton} {
+        background-color: $color;
+        padding: .3rem;
+        margin: .2rem 1.5rem;
+        border-radius: .3rem;
+    }
 }

@@ -1,4 +1,4 @@
-header{
+header {
     display: grid;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
@@ -7,50 +7,57 @@ header{
     background-color: grey;
     padding: 1em 0;
 
-    h1{
-        background-color :rgba(15, 15, 68, 0.979);
+    h1 {
+        background-color: rgba(15, 15, 68, 0.979);
         color: grey;
         font-weight: 37.5em;
         font-size: 3em;
         padding: .6rem 0;
         display: flex;
         justify-content: center;
-    } 
-    .navbar{
+    }
+
+    .navbar {
         background-color: rgba(15, 15, 68, 0.979);
         height: 13vh;
         display: flex;
         justify-content: space-around;
-        align-items:flex-start;
+        align-items: flex-start;
 
-        .menu{
+        .menu {
             display: flex;
-            font-size: 1.6em;
+            justify-content: space-between;
             gap: 1.2rem;
+            list-style-type: none;
+
+            a {
+                @include lista($font:2em, $margin:1rem);
+            }
         }
     }
-    .logo{
+
+    .logo {
         width: 180px;
         height: 70px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .logo{
-        justify-content: center;
-    }    
-    header{
-        padding: 2em 0;
-        position:absolute;
 
-        .navbar{
+    header {
+        padding: 2em 0;
+        position: absolute;
+
+        .navbar {
+            display: flex;
             flex-wrap: wrap;
             justify-content: center;
             height: 100%;
 
-            .menu{
+            .menu {
                 margin-top: 1rem;
             }
+
         }
     }
 }
