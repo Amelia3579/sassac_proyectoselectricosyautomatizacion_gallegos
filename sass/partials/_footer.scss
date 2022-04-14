@@ -1,19 +1,18 @@
-footer{
+footer {
     background-color: rgba(15, 15, 68, 0.979);
     display: grid;
     grid-column: 1 / 3;
     grid-row: 4;
-    justify-items:right;
+    justify-items: right;
     align-items: center;
-    color:grey;
-    font-weight: 2em;
-    font-size: 2em;
+    color: grey;
     padding-right: 2rem;
+    margin-bottom: 1.3rem;
 }
 
 @media screen and (max-width: 768px) {
-footer{
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

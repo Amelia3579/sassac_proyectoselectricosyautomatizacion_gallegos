@@ -1,15 +1,28 @@
+.contactos__estilos {
+    @include lista(black, 1.9em, 1rem);
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+}
+
 ol {
-    font-size: 1.8em;
-    color:black;
-    margin: 1.8em;
+    @include lista(black, 1em, 2rem);
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 2rem;
+}
+
+ul {
+    margin-top: 2rem;
 }
 
 form {
     display: grid;
-    grid-column: 3;
+    grid-column: 3 / 4;
     grid-row: 1 / 2;
     width: 30rem;
-    margin: 3rem 5rem;
+    margin: 3rem 5rem 3rem 10rem;
     border-left: .3rem solid grey;
 }
 
@@ -17,17 +30,24 @@ label {
     display: block;
     padding: .3rem;
     margin: 0 2rem;
+    font-size: 1.8em;
 }
-input[type], select, textarea {
+
+input[type],
+select {
     margin: 0 1.3rem;
     padding: .3rem 0;
+    height: 3.6rem;
+    border: 1px solid grey;
+    border-radius: .4rem;
 }
 
+textarea {
+    margin: 0 1.3rem;
+}
 
-$botones:(             
-    resetear: #f83d3d,
-    enviar: #00ffaa
-);
+$botones:(resetear: #f83d3d,
+    enviar: #00ffaa);
 
 @each $boton,
 $color in $botones {
@@ -35,6 +55,8 @@ $color in $botones {
         background-color: $color;
         padding: .3rem;
         margin: .2rem 1.5rem;
-        border-radius: .3rem;
+        border: 1px solid grey;
+        border-radius: .4rem;
+
     }
 }

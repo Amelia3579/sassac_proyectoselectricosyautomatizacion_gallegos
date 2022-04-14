@@ -2,33 +2,30 @@ header {
     display: grid;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    position: fixed;
     width: 100%;
     background-color: grey;
     padding: 1em 0;
 
     h1 {
-        background-color: rgba(15, 15, 68, 0.979);
-        color: grey;
-        font-weight: 37.5em;
-        font-size: 3em;
-        padding: .6rem 0;
         display: flex;
         justify-content: center;
+        background-color: rgba(15, 15, 68, 0.979);
+        color: grey;
+        font-size: 3em;
+        padding: .6rem 0;
     }
 
     .navbar {
-        background-color: rgba(15, 15, 68, 0.979);
-        height: 13vh;
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
+        background-color: rgba(15, 15, 68, 0.979);
+        height: 13vh;
 
         .menu {
             display: flex;
             justify-content: space-between;
             gap: 1.2rem;
-            list-style-type: none;
 
             a {
                 @include lista($font:2em, $margin:1rem);
@@ -46,7 +43,7 @@ header {
 
     header {
         padding: 2em 0;
-        position: absolute;
+        position: sticky;
 
         .navbar {
             display: flex;
@@ -57,7 +54,6 @@ header {
             .menu {
                 margin-top: 1rem;
             }
-
         }
     }
 }

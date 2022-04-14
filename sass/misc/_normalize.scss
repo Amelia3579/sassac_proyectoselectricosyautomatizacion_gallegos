@@ -16,10 +16,20 @@ body {
     min-height: 100vh;
     grid-template-columns: repeat (2, 1fr);
     grid-template-rows: 10vh 13vh 1fr 10vh;
-    background-color: grey;
+    background-color: rgb(175, 172, 172);
 }
 
 a {
     text-decoration: solid;
     color: grey;
+}
+
+p {
+    font-size: 1.8em;
+    padding: 0 1rem;
+    margin-top: 2rem;
+}
+
+ul {
+    list-style-type: none;
 }

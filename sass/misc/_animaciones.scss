@@ -1,18 +1,22 @@
-@keyframes explosive__move{
-    0%{
+@keyframes explosive__move {
+    0% {
         width: 600px;
     }
-    25%{
+
+    25% {
         width: 400px;
     }
-    50%{
+
+    50% {
         width: 200px;
         background-color: grey;
     }
-    75%{
+
+    75% {
         width: 300px;
     }
-    100%{
+
+    100% {
         width: 400px;
     }
 }
