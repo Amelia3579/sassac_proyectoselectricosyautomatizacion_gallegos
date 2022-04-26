@@ -1,7 +1,7 @@
 .empresa__estilos {
     display: grid;
-    align-items: center;
-    color: rgb(33, 33, 173);
+    align-items: flex-start;
+    color: black;
 }
 
 .empresa__mision {
@@ -9,7 +9,6 @@
     display: grid;
     grid-column: 2 / 3;
     grid-row: 1;
-    color: black;
 }
 
 .empresa__vision {
@@ -17,7 +16,6 @@
     display: grid;
     grid-column: 3 / 4;
     grid-row: 1;
-    color: black
 }
 
 .empresa__quienessomos {

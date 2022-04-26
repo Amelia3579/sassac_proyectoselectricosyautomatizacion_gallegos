@@ -1,8 +1,12 @@
-.contactos__estilos {
-    @include lista(black, 1.9em, 1rem);
+.estilos__lista {
+    @include lista(black, 2.1em, 1rem);
     display: grid;
     grid-column: 2;
     grid-row: 1;
+}
+
+.estilos__logos {
+    width: 30px;
 }
 
 ol {
@@ -14,16 +18,16 @@ ol {
 }
 
 ul {
-    margin-top: 2rem;
+    margin: 1.3rem 0;
 }
 
 form {
     display: grid;
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    width: 30rem;
-    margin: 3rem 5rem 3rem 10rem;
-    border-left: .3rem solid grey;
+    width: 38rem;
+    margin: 3rem 5rem 3rem 8rem;
+    border-left: .3rem solid rgba(15, 15, 68, 0.979);
 }
 
 label {
@@ -37,17 +41,20 @@ input[type],
 select {
     margin: 0 1.3rem;
     padding: .3rem 0;
-    height: 3.6rem;
-    border: 1px solid grey;
+    height: 3.4rem;
+    border: 1px solid rgba(15, 15, 68, 0.979);
     border-radius: .4rem;
 }
 
 textarea {
+    resize: none;
     margin: 0 1.3rem;
+    border: 1px solid rgba(15, 15, 68, 0.979);
+    border-radius: .4rem;
 }
 
-$botones:(resetear: #f83d3d,
-    enviar: #00ffaa);
+$botones:(resetear: #696ecf,
+    enviar: #787d9e);
 
 @each $boton,
 $color in $botones {
@@ -55,7 +62,7 @@ $color in $botones {
         background-color: $color;
         padding: .3rem;
         margin: .2rem 1.5rem;
-        border: 1px solid grey;
+        border: 1px solid rgba(15, 15, 68, 0.979);
         border-radius: .4rem;
 
     }

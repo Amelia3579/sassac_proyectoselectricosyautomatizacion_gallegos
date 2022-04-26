@@ -3,13 +3,11 @@ main {
     grid-column: 1 / 3;
     grid-row: 3;
     min-height: 100vh;
-    background: radial-gradient(circle, #5ffbf1, #52eff8, #54e3fc, #60d6fb, #71c8f5, #71c8f5, #71c8f5, #71c8f5, #60d6fb, #54e3fc, #52eff8, #5ffbf1);
 
     .main__disposicion {
         display: grid;
         grid-template-columns: 180px 1fr 1fr;
         grid-auto-rows: minmax(70px, auto);
-        background: radial-gradient(circle, #5ffbf1, #52eff8, #54e3fc, #60d6fb, #71c8f5, #71c8f5, #71c8f5, #71c8f5, #60d6fb, #54e3fc, #52eff8, #5ffbf1);
 
         &__h2 {
             display: grid;
@@ -17,39 +15,50 @@ main {
             grid-row: 1 / 4;
             justify-items: center;
             align-items: flex-start;
-            margin: 2rem 0;
-            background-color: rgba(15, 15, 68, 0.979);
+            background-color: rgb(15, 15, 68);
         }
     }
 }
 
 h2 {
-    color: grey;
     font-size: 2.4em;
-    padding: 2rem 1.2rem 0 1.8rem;
+    padding: 2rem 1.2rem 2rem 1.8rem;
 }
 
 h3 {
-    color: grey;
     font-weight: 2em;
     font-size: 2em;
-    margin: 2rem 2rem 0 2rem;
     padding: 2rem;
-    background-color: rgba(15, 15, 68, 0.979);
+    background-color: rgb(15, 15, 68);
 }
 
 @media screen and (max-width: 768px) {
     .main__disposicion {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         justify-content: flex-start;
-        background: radial-gradient(circle, #5ffbf1, #52eff8, #54e3fc, #60d6fb, #71c8f5, #71c8f5, #71c8f5, #71c8f5, #60d6fb, #54e3fc, #52eff8, #5ffbf1);
         margin-top: 4rem;
+
+        &__h2 {
+            margin-bottom: 8rem;
+        }
 
         table {
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            margin-left: .1rem;
+        }
+
+        form {
+            margin-left: 17rem;
+        }
+
+        .img__medidas {
+            margin-left: 13rem;
+        }
+
+        .p__alineacion {
+            margin: 1rem 12rem 1.5rem 12rem;
         }
     }
-
 }
